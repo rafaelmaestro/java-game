@@ -1,3 +1,4 @@
+// Developed by Rafael Maestro dos Santos, 201021137
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -16,10 +17,9 @@ public class Score extends Rectangle {
     }
     
     public void draw(Graphics g) {
+        // basic set up of the score
         g.setColor(Color.WHITE);
         g.setFont(new Font("Consolas", Font.BOLD, 30));
-
-        g.drawLine(APP_WIDTH/2, 0, APP_WIDTH/2, APP_HEIGHT);
 
         // draw the scores
         // String.valueOf() gets the value of the parameter and converts the int to a string

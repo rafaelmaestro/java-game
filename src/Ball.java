@@ -1,3 +1,4 @@
+// Developed by Rafael Maestro dos Santos, 201021137
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -15,6 +16,9 @@ public class Ball extends Rectangle {
 
     Ball(int x, int y, int width, int height){
 		super(x,y,width,height);
+        // using the random class to generate a random direction for the ball and initial speed to multiply
+        // the direction to get the ball moving in a random direction. This will add some randomness to the game.
+        // And since the ball is moving in a random direction, it will be harder to defend the goal.
 		random = new Random();
 		int randomXDir = random.nextInt(2);
 		if(randomXDir == 0)
